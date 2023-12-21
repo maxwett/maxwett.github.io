@@ -17,5 +17,24 @@
 
 <div id="plot-container"></div>
 
+<script>
+    function loadPlot() {
+        var plotSelector = document.getElementById('plotSelector');
+        var plotContainer = document.getElementById('plot-container');
+
+        var selectedPlot = plotSelector.value;
+
+        // Use fetch or other methods to load the content of the selected HTML file
+        fetch(selectedPlot)
+            .then(response => response.text())
+            .then(html => {
+                plotContainer.innerHTML = html;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    }
+</script>
+
 </body>
 </html>
