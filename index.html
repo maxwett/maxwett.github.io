@@ -27,4 +27,36 @@
 </script>
 
 </body>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu Example</title>
+</head>
+<body>
+
+<label for="plotSelector">Select a Plot:</label>
+<div id="plotLinks">
+    <a href="plot1.html" target="plotFrame">Plot 1</a>
+    <a href="plot2.html" target="plotFrame">Plot 2</a>
+    <!-- Add more links as needed -->
+</div>
+
+<iframe id="plotFrame" width="100%" height="400px" frameborder="0"></iframe>
+
+<style>
+    /* Add your CSS styles here */
+    #plotLinks {
+        display: flex;
+        gap: 10px;
+    }
+
+    #plotLinks a {
+        padding: 5px;
+        border: 1px solid #ccc;
+        text-decoration: none;
+        color: #333;
+    }
+</style>
+
+</body>
 </html>
